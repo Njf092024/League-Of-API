@@ -19,3 +19,16 @@ using(var scope = app.Services.CreateScope())
     );
 db.SaveChanges();
 }
+
+app.MapGet("/api/champions", async (AppDbContext db) =>
+await db.Champions.ToListAsync());
+
+app.MapGet("/api/champions/{id}", async (int id, AppDbContext db) =>
+await db.Champions.FindAsync(id) is Champion champion ? Results.Ok(champion) : Results.NotFound());
+
+app.MapPost("/api/champions", async (Champion champion, AppDbContext db) =>
+{
+    db.Champions.Add(champion);
+    await db.SaveChangesAsync();
+    return Results.Created($"/api/champions/{champion.Id}", champion);
+});
