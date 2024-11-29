@@ -54,4 +54,6 @@ app.MapDelete("/api/champions/{id}", async (int id, AppDbContext db) =>
     db.Champions.Remove(champion);
     await db.SaveChangesAsync();
     return Results.NoContent();
-})
+});
+
+app.Run();
