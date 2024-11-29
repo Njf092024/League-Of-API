@@ -1,0 +1,6 @@
+@LeagueOfAPI_HostAddress = http://localhost:5188
+
+GET {{LeagueOfAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
