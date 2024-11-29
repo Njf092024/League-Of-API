@@ -32,3 +32,26 @@ app.MapPost("/api/champions", async (Champion champion, AppDbContext db) =>
     await db.SaveChangesAsync();
     return Results.Created($"/api/champions/{champion.Id}", champion);
 });
+
+app.MapPut("/api/champions/{id}", async (int id, Champion updatedChampion, AppDbContext db) =>
+{
+    var champion = await db.Champions.FindAsync(id);
+    if (champion is null) return Results.NotFound();
+
+    champion.Name = updatedChampion.Name;
+    champion.Role = updatedChampion.Role;
+    champion.Difficulty = updatedChampion.Difficulty;
+
+    await db.SaveChangesAsync();
+    return Results.NoContent();
+});
+
+app.MapDelete("/api/champions/{id}", async (int id, AppDbContext db) =>
+{
+    var champion = await db.Champions.FindAsync(id);
+    if (champion is null) return Results.NotFound();
+
+    db.Champions.Remove(champion);
+    await db.SaveChangesAsync();
+    return Results.NoContent();
+})
