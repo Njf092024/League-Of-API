@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Koding\\League Of API\\LeagueOfAPI\\LeagueOfAPI.csproj": {}
+    "C:\\Koding\\LeagueOfAPI\\LeagueOfAPI\\LeagueOfAPI.csproj": {}
   },
   "projects": {
-    "C:\\Koding\\League Of API\\LeagueOfAPI\\LeagueOfAPI.csproj": {
+    "C:\\Koding\\LeagueOfAPI\\LeagueOfAPI\\LeagueOfAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Koding\\League Of API\\LeagueOfAPI\\LeagueOfAPI.csproj",
+        "projectUniqueName": "C:\\Koding\\LeagueOfAPI\\LeagueOfAPI\\LeagueOfAPI.csproj",
         "projectName": "LeagueOfAPI",
-        "projectPath": "C:\\Koding\\League Of API\\LeagueOfAPI\\LeagueOfAPI.csproj",
+        "projectPath": "C:\\Koding\\LeagueOfAPI\\LeagueOfAPI\\LeagueOfAPI.csproj",
         "packagesPath": "C:\\Users\\fadin\\.nuget\\packages\\",
-        "outputPath": "C:\\Koding\\League Of API\\LeagueOfAPI\\obj\\",
+        "outputPath": "C:\\Koding\\LeagueOfAPI\\LeagueOfAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fadin\\AppData\\Roaming\\NuGet\\NuGet.Config"

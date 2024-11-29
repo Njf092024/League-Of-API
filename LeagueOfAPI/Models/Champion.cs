@@ -1,4 +1,5 @@
 namespace LeagueOfAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 public class Champion
 {
